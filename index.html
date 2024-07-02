@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>TrajPrompt: Aligning Color Trajectory with Vision-Language Representations</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -56,17 +56,27 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Li-Wu Tsao</a><sup>1</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Li-Wu Tsao</a><sup></sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Hao-Tang Tsui</a><sup></sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Yu-Rou Tuan</a><sup></sup>,</span>
+                    <span class="author-block">
+                      <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Pei-Chi Chen</a><sup></sup>,</span>
+                      <span class="author-block">
+                        <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Kuan-Lin Wang</a><sup></sup>,</span>
+                        <span class="author-block">
+                          <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jhih-Ciang Wu</a><sup></sup>,</span>
+                          <span class="author-block">
+                            <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Hong-Han Shuai</a><sup></sup>,</span>
+                            <span class="author-block">
+                              <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Wen-Huang Cheng</a><sup></sup>,</span>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <span class="author-block">National Yang Ming Chiao Tung University, National Taiwan University<br>ECCV 2024</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
                   <div class="column has-text-centered">
@@ -133,7 +143,7 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        We propose <b>TrajPrompt<b>, a prompt-based approach that seamlessly incorporates trajectory representation into the vision-language framework, i.e. CLIP, for BEV scene understanding and future forecasting. TrajPrompt’s effectiveness via outperforming the state-of-the-art trajectory predictors by over 35% improvement for ADE and FDE metrics on SDD and DroneCrowd dataset, using fewer learnable parameters than the previous trajectory modeling approaches with scene information included.
       </h2>
     </div>
   </div>
@@ -148,7 +158,16 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Cross-modal learning has shown promising potential to overcome the limitations of single-modality tasks. However, without a proper design of representation alignment between different data sources, the external modality has no way to exhibit its value. We find that recent trajectory prediction approaches use Bird’s-Eye-View (BEV) scene as additional source, but do not significantly improve the performance compared to the single-source strategies. This indicates that the representation of BEV scene and trajectory is not effectively combined. To overcome this problem, our key contributions are highlighted as follows.
+          </p>
+          <p>
+            - We introduce a novel vision-language prompt approach, <b>TrajPrompt</b>, which integrates the visual target of colored line and trajectory prompts into image and text.
+          </p>
+          <p>
+            - We propose three objectives for prompt learning, including context fusion, surrounding localization, and motion forecasting. Utilizing image-text contrastive loss, alignment loss, and trajectory modeling loss correspondingly.
+          </p>
+          <p>
+            - Our method achieves new art by significant improvements over other state-of-the-arts on drone datasets. Furthermore, TrajPrompt reduces a large number of learnable parameters compared to the previous trajectory models with image information included.
           </p>
         </div>
       </div>
